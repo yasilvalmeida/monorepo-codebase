@@ -34,8 +34,10 @@ import { Configuration } from '../config/types';
           }),
         ];
 
+        /*
+        Log to files
         transports.push(
-          new winston.transports.File({
+          new winston.transports.Http({
             filename: 'logs/error.log',
             level: 'error',
             format: winston.format.combine(
@@ -50,7 +52,7 @@ import { Configuration } from '../config/types';
               winston.format.json(),
             ),
           }),
-        );
+        ); */
 
         return { transports };
       },
