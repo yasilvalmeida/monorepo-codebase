@@ -5,3 +5,5 @@
 {"level":"info","message":"Application is running on: http://localhost:5000","timestamp":"2025-04-09T23:58:09.991Z"}
 {"context":"RedisService","level":"info","message":"Redis Client Connected","timestamp":"2025-04-09T23:58:14.505Z"}
 {"level":"info","message":"Application is running on: http://localhost:5000","timestamp":"2025-04-09T23:58:14.532Z"}
+{"context":"RedisService","level":"info","message":"Redis Client Connected","timestamp":"2025-04-10T00:18:14.293Z"}
+{"level":"info","message":"Application is running on: http://localhost:5000","timestamp":"2025-04-10T00:18:14.326Z"}
