@@ -11,13 +11,13 @@ export class RedisService {
     private configService: ConfigService,
     private readonly logger: LoggerService,
   ) {
-    this.client = createClient({
+    const redisOptions = {
       url: this.configService.get('REDIS_URL'),
-      password: this.configService.get('REDIS_PASSWORD'),
-    });
+    };
+    this.client = createClient(redisOptions);
 
     this.client.on('error', (err) => {
-      this.logger.error('Redis Client Error', err.stack, 'RedisService');
+      this.logger.error('Redis Client Error', err, 'RedisService');
     });
 
     this.client.on('connect', () => {

@@ -19,10 +19,10 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: configService.get('CORS_ORIGINS', '*').split(','),
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
+    origin: '*',
+    allowedHeaders: '*',
+    methods: '*',
+    exposedHeaders: 'X-Token-Expired',
   });
 
   // Global validation pipe
